@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/search_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/search_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@color/login_bg" >
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_toLeftOf="@+id/search"
+            android:background="@drawable/edittext"
+            android:hint="输入搜索的帖子，慈善点"
+            android:paddingLeft="30dip"
+            android:paddingRight="10dip"
+            android:singleLine="true"
+            android:textSize="15dip" />
+    <ImageView
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_marginLeft="20dip"
+                android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search2" />
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/message_color" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_div2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_rel1" >
+
+        <ListView
+            android:id="@+id/search_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/common_transparent"
+            android:dividerHeight="0dip"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

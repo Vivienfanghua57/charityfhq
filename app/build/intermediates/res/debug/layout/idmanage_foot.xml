@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/imfoot_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+            android:background="@drawable/list_item_bg" >
+
+        <ImageView
+            android:id="@+id/idmana_avatar"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/add_circle" >
+            </ImageView>
+
+        <TextView
+            android:id="@+id/addid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/idmana_avatar"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="添加账号"
+            android:textColor="@color/common_blue"
+            android:textSize="16dip" />
+
+  <Button 
+      android:layout_alignParentBottom="true"
+      android:background="@color/common_div"
+      android:layout_width="fill_parent"
+      android:layout_height="0.1dip"/>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/idmanage_foot.xml -->

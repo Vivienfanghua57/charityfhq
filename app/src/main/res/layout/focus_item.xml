@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.charitydemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvLetter"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:background="@color/fragment_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dip"
+        android:text="A"
+        android:textColor="@color/common_main"
+        android:textSize="15dip" />
+
+    <RelativeLayout
+        android:id="@+id/ci_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip" >
+
+        <com.util.RoundAngleImageView
+            android:id="@+id/contact_avatar"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/m"
+            app:roundHeight="5dip"
+            app:roundWidth="5dip" />
+
+        <TextView
+            android:id="@+id/tvCompanyName_item"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/contact_avatar"
+            android:layout_marginLeft="20dip"
+            android:singleLine="true"
+            android:text="申通快递"
+            android:textColor="@color/common_black"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+</LinearLayout>

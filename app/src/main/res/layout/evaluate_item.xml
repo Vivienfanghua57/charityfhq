@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.charitydemo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ti_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/evaluate_status"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="待评价"
+            android:textColor="@color/common_blue1"
+            android:textSize="16dip" />
+
+        <com.util.RoundAngleImageView
+            android:id="@+id/trade_avatar"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/m"
+            app:roundHeight="5dip"
+            app:roundWidth="5dip" />
+
+        <TextView
+            android:id="@+id/trade_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/trade_avatar"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/trade_avatar"
+            android:gravity="center"
+            android:text="班义鲲"
+            android:textColor="@color/common_darkgray"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/trade_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/trade_avatar"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/trade_avatar"
+            android:text="2015-01-03"
+            android:textSize="16dip" />
+
+        <RelativeLayout
+            android:id="@+id/ti_rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trade_avatar"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/detail" >
+
+            <TextView
+                android:id="@+id/trade_text1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:text="原主题："
+                android:textColor="@color/common_black" />
+
+            <TextView
+                android:id="@+id/trade_thread_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/trade_text1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:text="武汉大学慈善组招收新人！" />
+
+            <TextView
+                android:id="@+id/trade_thread_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/trade_thread_title"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="武汉大学慈善组招收新人！武汉大学慈善组招收新人！武汉大学慈善组招收新人！" />
+
+            <TextView
+                android:id="@+id/trade_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trade_thread_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:text="捐赠物品："
+                android:textColor="@color/common_black" />
+
+            <TextView
+                android:id="@+id/trade_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trade_thread_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/trade_text2"
+                android:singleLine="true"
+                android:text="自动铅笔" />
+
+            <TextView
+                android:id="@+id/trade_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trade_text2"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:text="捐赠数量："
+                android:textColor="@color/common_black" />
+
+            <TextView
+                android:id="@+id/trade_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trade_text2"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/trade_text3"
+                android:singleLine="true"
+                android:text="50" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:layout_below="@+id/trade_text3"
+                android:background="@color/common_transparent"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/trade_evaluate"
+            android:layout_width="65dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ti_rel1"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/evaluatebtn"
+            android:gravity="center"
+            android:text="评价"
+            android:textColor="@color/common_coffee" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:layout_below="@+id/trade_evaluate"
+            android:background="@color/common_transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

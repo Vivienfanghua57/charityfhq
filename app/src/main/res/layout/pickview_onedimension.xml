@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_white" >
+        <View
+            android:id="@+id/pick_div0"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/common_div" />
+        <TextView
+            android:id="@+id/pick_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pick_div0"
+            android:layout_marginTop="10dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:textSize="15dip"
+            android:textColor="@color/message_color"
+            android:text="完成" />
+
+        <View
+            android:id="@+id/pick_div1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@+id/pick_complete"
+            android:layout_marginTop="10dip"
+            android:background="@color/common_div" />
+
+        <com.util.PickerView
+            android:id="@+id/pickview"
+            android:layout_width="fill_parent"
+            android:layout_height="180dip"
+            android:layout_below="@+id/pick_div1"
+            android:layout_marginTop="15dip" />
+        <View
+            android:id="@+id/pick_div2"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/pickview"
+            android:layout_height="15dip"
+            android:background="@color/common_transparent" />
+    </RelativeLayout>
+
+</RelativeLayout>

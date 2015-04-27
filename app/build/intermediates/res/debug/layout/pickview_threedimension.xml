@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/common_white" >
+
+        <TextView
+            android:id="@+id/pick_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:text="完成"
+            android:textColor="@color/message_color"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/pick_div1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/pick_complete"
+            android:layout_marginTop="10dip"
+            android:background="@color/common_div" />
+<LinearLayout android:id="@+id/pickview_lin1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+                android:layout_below="@+id/pick_div1"
+            android:layout_marginTop="15dip">
+        <com.util.PickerView
+            android:id="@+id/pickview1"
+            android:layout_width="wrap_content"
+            android:layout_height="180dip"
+            android:layout_weight="1"/>
+
+        <com.util.PickerView
+            android:id="@+id/pickview2"
+            android:layout_width="wrap_content"
+            android:layout_height="180dip"
+            android:layout_weight="1" />
+
+        <com.util.PickerView
+            android:id="@+id/pickview3"
+            android:layout_width="wrap_content"
+            android:layout_height="180dip"
+            android:layout_weight="1"
+             />
+</LinearLayout>
+        <Button
+            android:id="@+id/pick_div2"
+            android:layout_width="fill_parent"
+            android:layout_height="15dip"
+            android:layout_below="@+id/pickview_lin1"
+            android:background="@color/common_transparent" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/pickview_threedimension.xml -->

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dilog1_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_transparent"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/dilog1_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:alpha="0.9"
+        android:background="@drawable/dialog_bg" >
+
+        <TextView
+            android:id="@+id/dialog1_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在登陆，请稍后..."
+            android:layout_centerInParent="true"
+            android:textColor="@color/common_coffee"
+            android:textSize="16dip" />
+            <ProgressBar
+                android:id="@+id/login_progressBar"
+        		android:layout_width="40dip"
+        		android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/dialog1_content"
+                android:layout_marginRight="15dip"
+                android:indeterminateDrawable="@drawable/frame_loading"
+                 />
+
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/dialog1.xml -->

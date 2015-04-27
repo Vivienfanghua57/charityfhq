@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/chat_top1"
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:background="@color/common_main" >
+
+        <RelativeLayout
+            android:id="@+id/chat_top"
+            android:layout_height="42dip"
+            android:layout_width="fill_parent">
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/chatTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/common_white"
+                android:text="周董"
+                android:textSize="20dip" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/chat_top1"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:transcriptMode="alwaysScroll" />
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <!-- 聊天输入框 -->
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/facerelativelayout" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

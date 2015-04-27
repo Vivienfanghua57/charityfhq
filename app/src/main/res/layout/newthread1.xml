@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg" >
+
+    <RelativeLayout
+        android:id="@+id/newthr1_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_main"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="主题"
+            android:textColor="@color/common_white"
+            android:textSize="20dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/nextstep"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/common_white" />
+
+        <TextView
+            android:id="@+id/thrcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/common_white" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+             android:layout_below="@+id/newthr1_rel1">
+
+            <RelativeLayout
+                android:id="@+id/second_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white" >
+
+                <EditText
+                    android:id="@+id/newthr1_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/common_transparent"
+                    android:hint="标题"
+                    android:maxLength="30"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:singleLine="true"
+                    android:textSize="15dip" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/newthr1_div"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_below="@+id/newthr1_title"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/common_div" />
+
+                <EditText
+                    android:id="@+id/newthr1_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dip"
+                    android:layout_below="@+id/newthr1_div"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/common_transparent"
+                    android:gravity="top"
+                    android:hint="描述一下吧..."
+                    android:maxLength="300"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:textSize="15dip" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/nt_time"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_alignBottom="@+id/nt_txtcount"
+                    android:layout_below="@+id/newthr1_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="10dip"
+                    android:src="@drawable/ti" />
+
+                <ImageView
+                    android:id="@+id/nt_at"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_alignBottom="@+id/nt_txtcount"
+                    android:layout_below="@+id/newthr1_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@+id/nt_time"
+                    android:src="@drawable/at" />
+
+                <TextView
+                    android:id="@+id/nt_txtcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/newthr1_content"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="0/300"
+                    android:textSize="15dip" />
+
+                <Button
+                    android:id="@+id/newthr1_div2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_below="@+id/nt_txtcount"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/common_div" />
+
+                <Button
+                    android:id="@+id/newthr1_loc"
+                    android:layout_width="20dip"
+                    android:layout_height="30dip"
+                    android:layout_below="@+id/newthr1_div2"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/blue_pin" />
+
+                <TextView
+                    android:id="@+id/newthr1_loctxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_below="@+id/newthr1_div2"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@+id/newthr1_loc"
+                    android:gravity="center"
+                    android:text="洪山区 街道口"
+                    android:textSize="15dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/newthr1_timetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/newthr1_div2"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:text="0天"
+                    android:textColor="@color/common_coffee"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_below="@+id/newthr1_div2"
+                    android:layout_marginRight="2dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toLeftOf="@+id/newthr1_timetxt"
+                    android:gravity="center"
+                    android:text="剩余天数："
+                    android:textColor="@color/message_color"
+                    android:textSize="15dip" />
+
+                <Button
+                    android:id="@+id/newthr1_div3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_below="@+id/newthr1_loc"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/common_div" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/grid_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_rel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:horizontalSpacing="20dip"
+                android:listSelector="@color/common_transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="20dip" >
+            </GridView>
+        </RelativeLayout>
+
+</RelativeLayout>

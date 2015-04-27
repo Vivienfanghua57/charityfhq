@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg" >
+
+    <RelativeLayout
+        android:id="@+id/search_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="51dip"
+        android:background="@drawable/list_item_bg" >
+
+        <TextView
+            android:id="@+id/del_history"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_centerInParent="true"
+			android:background="@color/common_transparent"
+            android:gravity="center"
+            android:text="清除搜索记录"
+            android:textColor="@color/common_blackgray"
+            android:textSize="16dip" />
+
+        <Button
+            android:id="@+id/listfoot_div1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/del_history"
+            android:background="@color/common_div2" />
+    </RelativeLayout>
+
+</RelativeLayout>

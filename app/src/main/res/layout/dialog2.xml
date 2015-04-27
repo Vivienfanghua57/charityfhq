@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dilog2_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dilog2_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:alpha="0.9"
+        android:background="@drawable/dialog_bg" >
+
+        <TextView
+            android:id="@+id/dialog2_content"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:text="是否保存为草稿？"
+            android:textColor="@color/common_black"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/dialog2_div1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@+id/dialog2_content"
+            android:background="@color/common_div2" />
+
+        <Button
+            android:id="@+id/dialog2_div2"
+            android:layout_width="0.1dip"
+            android:layout_height="40dip"
+            android:layout_below="@+id/dialog2_div1"
+            android:layout_centerInParent="true"
+            android:background="@color/common_div2" />
+
+        <TextView
+            android:id="@+id/dialog2_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/dialog2_div1"
+            android:layout_toLeftOf="@+id/dialog2_div2"
+            android:background="@drawable/me_btnbg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/common_main"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/dialog2_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/dialog2_div1"
+            android:layout_toRightOf="@+id/dialog2_div2"
+            android:background="@drawable/me_btnbg"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/common_main"
+            android:textSize="15dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

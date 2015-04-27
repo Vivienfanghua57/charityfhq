@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <com.util.RoundImageView
+        android:id="@+id/cir_proavatar"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dip"
+        android:src="@drawable/m" >
+    </com.util.RoundImageView>
+
+    <Button
+        android:id="@+id/login_div1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/cir_proavatar"
+        android:layout_marginTop="45dip"
+        android:background="@color/common_div2" />
+
+    <RelativeLayout
+        android:id="@+id/login_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_below="@+id/login_div1"
+        android:background="@color/common_white" >
+
+        <ImageView
+            android:id="@+id/idimg"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:src="@drawable/idimg1" />
+
+        <EditText
+            android:id="@+id/userid_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/login_div2"
+            android:layout_marginLeft="60dip"
+            android:layout_marginRight="32dip"
+            android:background="@color/common_transparent"
+            android:hint="请输入账号"
+            android:singleLine="true"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/delbtn1"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_above="@+id/login_div2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="17.5dip"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/cross"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/del1"
+            android:layout_width="32dip"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/login_div2"
+            android:layout_alignParentRight="true"
+            android:background="@color/common_transparent" />
+
+        <Button
+            android:id="@+id/login_div2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/common_div2" />
+
+        <ImageView
+            android:id="@+id/pwdimg"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/pwdimg1" />
+
+        <EditText
+            android:id="@+id/pwd_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/login_div2"
+            android:layout_marginLeft="60dip"
+            android:layout_marginRight="32dip"
+            android:background="@color/common_transparent"
+            android:hint="请输入密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/delbtn2"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/login_div2"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="17.5dip"
+            android:src="@drawable/cross"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/del2"
+            android:layout_width="32dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/login_div2"
+            android:background="@color/common_transparent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_div3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/login_rel1"
+        android:background="@color/common_div2" />
+
+    <Button
+        android:id="@+id/login_btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/login_rel1"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:text="登陆"
+        android:textColor="@color/common_white"
+        android:textSize="16dip" />
+
+    <Button
+        android:id="@+id/login_btn2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/login_rel1"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/pop_btn" />
+<!--  
+    <RelativeLayout
+        android:id="@+id/login_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_btn1"
+        android:layout_alignRight="@+id/login_btn1"
+        android:layout_below="@+id/login_btn2"
+        android:layout_marginTop="25dip" >
+
+        <TextView
+            android:id="@+id/login_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/common_transparent"
+            android:text="其他方式"
+            android:textColor="@color/common_coffee"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/login_div4"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:layout_toLeftOf="@+id/login_other"
+            android:background="@color/common_div2" />
+
+        <Button
+            android:id="@+id/login_div5"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/login_other"
+            android:background="@color/common_div2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_rel3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_btn1"
+        android:layout_alignRight="@+id/login_btn1"
+        android:layout_below="@+id/login_rel2" 
+        android:layout_marginTop="10dip">
+
+        <ImageView
+            android:id="@+id/login_way1"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_weixin" />
+
+        <ImageView
+             android:id="@+id/login_way2"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="25dip"
+            android:src="@drawable/icon_sina" />
+
+        <ImageView
+            android:id="@+id/login_way3"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dip"
+            android:src="@drawable/icon_qq" />
+    </RelativeLayout>
+-->
+    <RelativeLayout
+        android:id="@+id/login_rel4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:background="@color/common_transparent" >
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@+id/login_div6"
+            android:gravity="center"
+            android:text="注册账号"
+            android:textColor="@color/common_main" />
+
+        <Button
+            android:id="@+id/login_div6"
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true"
+            android:background="@color/common_div2" />
+
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/login_div6"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="@color/common_main" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.example.charitydemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dip" >
+
+        <com.util.RoundAngleImageView
+            android:id="@+id/goods_detail_image"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/goods_detail_item.xml -->

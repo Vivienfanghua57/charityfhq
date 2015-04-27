@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ng_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip" >
+
+        <com.util.RoundImageView
+            android:id="@+id/apply_avatar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/m"
+            app:roundHeight="5dip"
+            app:roundWidth="5dip" />
+
+        <TextView
+            android:id="@+id/apply_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@+id/apply_status"
+            android:layout_toRightOf="@+id/apply_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="班义鲲"
+            android:textColor="@color/common_black"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/apply_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_toLeftOf="@+id/apply_status"
+            android:layout_toRightOf="@+id/apply_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="申请加入武汉大学慈善组"
+            android:textColor="@color/common_coffee"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/apply_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:singleLine="true"
+            android:text="已同意"
+            android:textColor="@color/common_coffee"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/notice_group_item.xml -->

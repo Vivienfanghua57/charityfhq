@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.util.RoundImageView
+            android:id="@+id/comment_avatar"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/m"
+            app:roundHeight="5dip"
+            app:roundWidth="5dip" />
+
+        <TextView
+            android:id="@+id/comment_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/comment_avatar"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/comment_avatar"
+            android:gravity="center"
+            android:text="班义鲲"
+            android:textColor="@color/common_darkgray"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/comment_avatar"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/comment_avatar"
+            android:text="2015-01-03"
+            android:textSize="16dip" />
+
+        <Button
+            android:id="@+id/comment_reply"
+            android:layout_width="65dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/mebtn"
+            android:gravity="center"
+            android:textColor="@color/common_main"
+            android:text="回复" />
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_avatar"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:text="对的，表示赞同！！"
+            android:textColor="@color/common_black"
+            android:textSize="18dip" />
+
+        <RelativeLayout
+            android:id="@+id/cl_rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/detail" >
+
+            <TextView
+                android:id="@+id/comment_thread_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:text="武汉大学慈善组招收新人！" />
+
+            <TextView
+                android:id="@+id/comment_thread_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment_thread_title"
+                            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="武汉大学慈善组招收新人！武汉大学慈善组招收新人！武汉大学慈善组招收新人！" />
+            <Button android:layout_below="@+id/comment_thread_content"
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:background="@color/common_transparent"/>
+        </RelativeLayout>
+                    <Button android:layout_below="@+id/cl_rel1"
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:background="@color/common_transparent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

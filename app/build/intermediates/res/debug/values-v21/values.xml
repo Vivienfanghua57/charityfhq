@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/CharityDemo/app/build/intermediates/exploded-aar/CharityDemo/library/unspecified/res/values-v21/values.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+    </style>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/search_bg"
+    android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="180dip" >
+
+            <TextView
+                android:id="@+id/searchhottxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:text="热门搜索"
+                android:textSize="12dip" />
+
+            <RelativeLayout
+                android:id="@+id/search_rel2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchhottxt"
+                android:layout_marginTop="10dip" >
+
+                <LinearLayout
+                    android:id="@+id/search_lin1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/common_white"
+                        android:text="种太阳工作室"
+                        android:textColor="@color/common_blackgray"
+                        android:textSize="12dip" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.1"
+                        android:background="@color/common_transparent" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/common_white"
+                        android:text="大凉山希望小学"
+                        android:textColor="@color/common_blackgray"
+                        android:textSize="12dip" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.1"
+                        android:background="@color/common_transparent" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/common_white"
+                        android:text="武汉大学慈善点"
+                        android:textColor="@color/common_blackgray"
+                        android:textSize="12dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_lin2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_below="@+id/search_lin1"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/common_white"
+                        android:text="牛人日捐数千"
+                        android:textColor="@color/common_blackgray"
+                        android:textSize="12dip" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.1"
+                        android:background="@color/common_transparent" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/common_white"
+                        android:text="山区最美教师"
+                        android:textColor="@color/common_blackgray"
+                        android:textSize="12dip" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.1"
+                        android:background="@color/common_transparent" />
+
+                    <Button
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/common_white"
+                        android:text="当代雷锋"
+                        android:textColor="@color/common_blackgray"
+                        android:textSize="12dip" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/searchhistxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/search_rel2"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:text="搜索记录"
+                android:textSize="12dip" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:layout_below="@+id/searchhistxt"
+                android:background="@color/common_transparent" >
+            </Button>
+        </RelativeLayout>
+
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/searchhead.xml -->

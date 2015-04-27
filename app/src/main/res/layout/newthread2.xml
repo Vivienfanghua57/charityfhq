@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg" >
+
+    <RelativeLayout
+        android:id="@+id/newthr2_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_main"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="物品"
+            android:textColor="@color/common_white"
+            android:textSize="20dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/thrconfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="@color/common_white" />
+
+        <TextView
+            android:id="@+id/thrcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/common_white" />
+    </RelativeLayout>
+        <ListView
+        android:id="@+id/newthr2_goods_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newthr2_rel1"
+        android:background="@color/common_white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/common_div"
+        android:dividerHeight="0.1dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+    </RelativeLayout>

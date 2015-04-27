@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dip"
+    android:layout_height="50dip"
+    android:background="@color/login_bg">
+
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+                        <Button
+            android:layout_width="20dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/common_transparent"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/collect"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/common_white"
+            android:textColor="@color/common_main"
+            android:text="收藏" >
+        </Button>
+                        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/common_transparent"
+            android:visibility="invisible" />
+                <Button
+            android:id="@+id/camera"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/common_white"
+            android:textColor="@color/common_main"
+            android:text="回复" >
+        </Button>
+                                <Button
+            android:layout_width="20dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/common_transparent"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/morepopup.xml -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goods_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/goods_frontimg"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add_circle" />
+
+        <TextView
+            android:id="@+id/goods_addtion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/goods_frontimg"
+            android:text="添加物品"
+            android:textColor="@color/message_color"
+            android:textSize="16dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

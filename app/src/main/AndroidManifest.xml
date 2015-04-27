@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.charitydemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:name="com.util.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="df5f55f7ea8c6ad4566a0ebe4171ed79" />
+        <activity
+            android:name="com.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chat.ChatActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.ReadThread"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.NewThread"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.main.Settings"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.main.RankList"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.main.SearchThreadPost"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.SearchMemberGroup"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.Login"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.Topic"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.FindThread"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.ProfileUser"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.ImageGalleryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.Register"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.FocusActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.ReadPost"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.IDManage"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.NoticeComment"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.NoticeFocus"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.NoticeTrade"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.NoticeGroup"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.CharityGroup"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.Evaluate"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.DraftBox"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.BriefThread"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.HDPicture"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.NewThreadGoods"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.GoodsDetail"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.ProfileGroup"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.NewThreadGoodsDes"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.main.ForumActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.MyCollect"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.main.Add"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver android:name="com.util.NetBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.NET_CHANGE_ACTION" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.main.SelectLocation"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+        </activity>
+    </application>
+
+
+</manifest>

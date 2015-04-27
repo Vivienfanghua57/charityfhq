@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg">
+<RelativeLayout 
+    android:id="@+id/add_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg">
+    <RelativeLayout
+        android:id="@+id/add_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@color/common_main"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@color/common_white"
+            android:textSize="20dip" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_rel1"
+        android:layout_marginTop="20dip"
+        android:background="@color/common_white" >
+
+        <View
+            android:id="@+id/add_div1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_div" />
+
+        <ImageView
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/search2" />
+
+        <View
+            android:id="@+id/add_div2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/add_search"
+            android:background="@color/common_div" />
+
+        <EditText
+            android:id="@+id/add_search"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_transparent"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="left|center"
+            android:hint="用户或慈善组账号"
+            android:paddingLeft="45dip"
+            android:textColor="@color/common_black"
+            android:textSize="15dip" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_rel3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_rel2"
+        android:layout_marginTop="40dip"
+        android:background="@color/common_white" >
+
+        <View
+            android:id="@+id/add_div3"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_div" />
+
+        <TextView
+            android:id="@+id/add_select"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/add_div3"
+            android:background="@drawable/me_btnbg"
+            android:gravity="left|center"
+            android:paddingLeft="25dip"
+            android:text="筛选陌生人（地区，兴趣）"
+            android:textColor="@color/common_black"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/add_div3"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/right" />
+
+        <View
+            android:id="@+id/add_div4"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/add_select"
+            android:background="@color/common_div" />
+
+        <TextView
+            android:id="@+id/add_nearby"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/add_div4"
+            android:background="@drawable/me_btnbg"
+            android:gravity="left|center"
+            android:paddingLeft="25dip"
+            android:text="查看附近"
+            android:textColor="@color/common_black"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/add_div4"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/right" />
+
+        <View
+            android:id="@+id/add_div5"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/add_nearby"
+            android:background="@color/common_div" />
+
+        <TextView
+            android:id="@+id/add_hot"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/add_div5"
+            android:background="@drawable/me_btnbg"
+            android:gravity="left|center"
+            android:paddingLeft="25dip"
+            android:text="热门慈善组"
+            android:textColor="@color/common_black"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/add_div5"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/right" />
+
+        <View
+            android:id="@+id/add_div6"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/add_hot"
+            android:background="@color/common_div" />
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

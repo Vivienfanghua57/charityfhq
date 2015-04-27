@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.charitydemo"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+	android:background="@color/common_white"
+    android:orientation="horizontal" >
+
+   <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+            android:background="@drawable/list_item_bg" >
+
+        <com.util.RoundAngleImageView
+            android:id="@+id/chat_avatar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/m"
+            app:roundHeight="5dip"
+            app:roundWidth="5dip" />
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/chat_avatar"
+            android:layout_marginTop="10dip"
+            android:singleLine="true"
+            android:text="班义鲲"
+            android:textColor="@color/common_black"
+            android:textSize="20dip" />
+        <TextView
+            android:id="@+id/chat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/chat_avatar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:singleLine="true"
+            android:text="好的，明天就出发！"
+            android:textColor="@color/common_coffee"
+            android:textSize="16dip" />
+        <TextView
+            android:id="@+id/chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:singleLine="true"
+            android:text="20:50"
+            android:textColor="@color/common_coffee"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+</LinearLayout>

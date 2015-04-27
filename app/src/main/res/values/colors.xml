@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_white">#FFFFFF</color>
+    <color name="common_div">#DCDCDC</color>
+    <color name="common_div2">#D7D7D7</color>
+    <color name="common_transparent">#00000000</color>
+    <color name="light_transparent">#10000000</color>
+    <color name="common_streamlightgray">#F1F1F1</color>
+    <color name="common_lightgray">#e6e6e6</color>
+    <color name="common_darkgray">#696969</color>
+    <color name="common_blackgray">#A9A9A9</color>
+    <color name="common_green">#75c557</color>
+    <color name="common_red">#FF0000</color>
+    <color name="common_black">#000000</color>
+    <color name="common_blue">#5DCDF5</color>
+    <color name="common_main">#459EAD</color>
+    <color name="common_coffee">#888888</color>
+    <color name="common_orange">#ff9900</color>
+    <color name="common_blue1">#9cddd7</color>
+    <color name="search_bg">#F0F0F0</color>
+    <color name="login_bg">#F8F8F8</color>
+    <color name="tab_bg">#FFFAFA</color>
+    <color name="tab_white">#eee</color>
+    <color name="fragment_bg">#EBECED</color>
+    <color name="tabtxt_selected">#5DCDF5</color>
+    <color name="tabtxt_normal">#888888</color>
+    <color name="message_color">#00BFFF</color>
+    <color name="newfollow_color">#87CEFA</color>
+    <color name="blur_bg">#FFFAF0</color>
+    <color name="right_bg">#696969</color>
+
+</resources>

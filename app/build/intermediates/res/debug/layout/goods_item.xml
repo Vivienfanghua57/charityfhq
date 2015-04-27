@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/goods_rel"
+        android:layout_width="match_parent"
+        android:layout_height="100dip" >
+
+        <ImageView
+            android:id="@+id/goods_frontimg3"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="6dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test3" />
+
+        <ImageView
+            android:id="@+id/goods_frontimg2"
+            android:layout_width="75dip"
+            android:layout_height="75dip"
+            android:layout_marginLeft="17.5dip"
+            android:layout_marginTop="8dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test2" />
+
+        <ImageView
+            android:id="@+id/goods_frontimg"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test1" />
+
+        <TextView
+            android:id="@+id/goods_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/goods_frontimg"
+            android:singleLine="true"
+            android:text="大家电|冰箱"
+            android:textColor="@color/message_color"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/goods_characters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/goods_type"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/goods_type"
+            android:layout_marginRight="15dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="长虹，2台，30寸"
+            android:textColor="@color/common_coffee"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/goods_descr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/goods_frontimg"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/goods_frontimg"
+            android:text="这是我们社团在武汉大学号召同学们捐的衣物"
+            android:textColor="@color/common_coffee"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/goods_item.xml -->

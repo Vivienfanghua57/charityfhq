@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.util.RoundAngleImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="80dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test6"
+        app:roundHeight="5dip"
+        app:roundWidth="5dip" />
+
+</LinearLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/profile_group_item.xml -->

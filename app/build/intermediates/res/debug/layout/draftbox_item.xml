@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/di_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip" >
+
+        <ImageView
+            android:id="@+id/draft_image"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test1"/>
+
+        <TextView
+            android:id="@+id/draft_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/draft_image"
+            android:layout_marginTop="10dip"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/draft_time"
+            android:ellipsize="end"
+            android:text="武汉大学种太阳工作室将"
+            android:textColor="@color/common_black"
+            android:textSize="14dip" />
+        <TextView
+            android:id="@+id/draft_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/draft_image"
+            android:layout_marginRight="5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/draftbox_send"
+            android:ellipsize="end"
+            android:text="2014年8月30日于桂圆操场"
+            android:textColor="@color/common_coffee"
+            android:textSize="12dip" />
+                <Button
+            android:id="@+id/draftbox_send"
+            android:layout_width="45dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+                       android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/mebtn"
+            android:gravity="center"
+            android:textColor="@color/common_main"
+            android:text="发送"/>
+        <TextView
+            android:id="@+id/draft_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:singleLine="true"
+            android:text="06-03 20:50"
+            android:textColor="@color/common_coffee"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/draftbox_item.xml -->

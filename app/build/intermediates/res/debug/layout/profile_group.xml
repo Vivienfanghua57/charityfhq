@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fragment_bg"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/pro_bg"
+        android:layout_width="match_parent"
+        android:layout_height="500dip"
+        android:layout_marginTop="-100dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/pro_bg" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="2dip"
+        android:layout_height="180dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dip"
+        android:background="@color/common_transparent" />
+
+    <com.util.MyScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <GridView
+                android:id="@+id/grid_main"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:verticalSpacing="10dip"
+                android:horizontalSpacing="10dip"
+                android:listSelector="@color/common_transparent"
+                android:scrollbars="none"
+                android:numColumns="4" >
+            </GridView>
+
+            <RelativeLayout
+                android:id="@+id/secondrel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grid_main"
+                android:layout_marginTop="10dip"
+                android:background="@color/common_white" >
+
+                <Button
+                    android:id="@+id/pro_div1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:background="@color/common_div" />
+
+                <TextView
+                    android:id="@+id/profile_group_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pro_div1"
+                    android:layout_marginLeft="90dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center"
+                    android:paddingRight="10dip"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true"
+                    android:text="15369842"
+                    android:textColor="@color/common_black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="群号码"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+
+                <Button
+                    android:id="@+id/pro_div3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dip"
+                    android:layout_below="@+id/profile_group_id"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/common_div" />
+
+                <RelativeLayout
+                    android:id="@+id/pro_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div3"
+                    android:layout_marginLeft="90dip"
+                     >
+                     <ImageView 
+                         android:id="@+id/group_member1"
+                         android:layout_width="40dip"
+                         android:layout_height="40dip"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="20dip"
+                         android:src="@drawable/f"/>
+                                         <ImageView android:layout_width="40dip"
+                         android:layout_height="40dip"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="20dip"
+                         android:layout_toRightOf="@+id/group_member1"
+                         android:src="@drawable/m"/>
+                     </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div3"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="群成员"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+
+                <Button
+                    android:id="@+id/pro_div4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dip"
+                    android:layout_below="@+id/pro_email"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/common_div" />
+
+                <TextView
+                    android:id="@+id/profile_group_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div4"
+                    android:layout_marginLeft="90dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center"
+                    android:paddingRight="10dip"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true"
+                    android:text="洪山区街道口|1.5km"
+                    android:textColor="@color/common_black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div4"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="    地区"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+
+                <Button
+                    android:id="@+id/pro_div5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dip"
+                    android:layout_below="@+id/profile_group_loc"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/common_div" />
+
+                <TextView
+                    android:id="@+id/profile_group_oritime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div5"
+                    android:layout_marginLeft="90dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center"
+                    android:paddingRight="10dip"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true"
+                    android:text="2014-08-13"
+                    android:textColor="@color/common_black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="创建时间"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+                                <Button
+                    android:id="@+id/pro_div8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dip"
+                    android:layout_below="@+id/profile_group_oritime"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/common_div" />
+
+                <RelativeLayout
+                    android:id="@+id/profile_group_rel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div8"
+                    android:layout_marginLeft="90dip"
+                     >
+                     <ImageView 
+                         android:id="@+id/group_owner"
+                         android:layout_width="40dip"
+                         android:layout_height="40dip"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="20dip"
+                         android:src="@drawable/f"/>
+                                         
+                     </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div8"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="    群主"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+                                <Button
+                    android:id="@+id/pro_div9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dip"
+                    android:layout_below="@+id/profile_group_rel2"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/common_div" />
+
+                <TextView
+                    android:id="@+id/profile_group_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pro_div9"
+                    android:layout_marginLeft="90dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="left"
+                    android:paddingRight="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:text="本群致力于武汉周边小城市公益事业等，双方都是放水电费水电费收费"
+                    android:textColor="@color/common_black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div9"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="群介绍"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.util.MyScrollView>
+
+    <RelativeLayout
+        android:id="@+id/pro_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_transparent"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pro_back"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/left" />
+
+        <Button
+            android:id="@+id/pro_edit"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/edit1"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pro_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/pro_div6"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_div2" />
+
+        <Button
+            android:id="@+id/pro_div7"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/common_div" />
+
+        <TextView
+            android:id="@+id/profile_group_focus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/pro_div6"
+            android:layout_toLeftOf="@+id/pro_div7"
+            android:background="@drawable/list_item_bg"
+            android:gravity="center"
+            android:text="申请加入"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/focus_img"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/collect1" />
+
+        <TextView
+            android:id="@+id/profile_group_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/pro_div6"
+            android:layout_toRightOf="@+id/pro_div7"
+            android:background="@drawable/list_item_bg"
+            android:gravity="center"
+            android:text="私  信"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/pro_div7"
+            android:src="@drawable/reply1" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/profile_group.xml -->

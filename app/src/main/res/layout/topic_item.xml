@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topic_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_bg" >
+
+        <TextView
+            android:id="@+id/topic_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="25dip"
+            android:textColor="@color/common_coffee"
+            android:text="3月5日  17:25" />
+
+        <RelativeLayout
+            android:id="@+id/topic_rel2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_time"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/list_item_bg" >
+
+            <TextView
+                android:id="@+id/topic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dip"
+                android:text="全国大学生英语辩论赛讨论陈光标高调慈善"
+                android:textColor="@color/common_black"
+                android:textSize="18dip" />
+
+            <ImageView
+                android:id="@+id/topic_frontimg"
+                android:layout_width="fill_parent"
+                android:layout_height="180dip"
+                android:layout_below="@+id/topic_title"
+                android:layout_marginTop="10dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/test7" />
+
+            <TextView
+                android:id="@+id/topic_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topic_frontimg"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="外研社全国大学生英语辩论赛华西地区决赛在西南民族大学举行。此次全国大学生英语辩论赛自2014年10月拉开序幕以来"
+                android:textSize="16dip" />
+
+            <Button
+                android:id="@+id/topic_div1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/topic_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/common_div2" />
+
+            <TextView
+                android:id="@+id/topic_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topic_div1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="阅读详情"
+                android:textColor="@color/common_black"
+                android:textSize="16dip" />
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/topic_div1"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/right" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:layout_below="@+id/topic_txt1"
+                android:background="@color/common_transparent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/im_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip" >
+
+        <com.util.RoundImageView
+            android:id="@+id/idmana_avatar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/m" >
+            </com.util.RoundImageView>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/idmana_avatar"
+            android:layout_marginTop="10dip"
+            android:singleLine="true"
+            android:text="班义鲲"
+            android:textColor="@color/common_black"
+            android:textSize="20dip" />
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/idmana_avatar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:singleLine="true"
+            android:text="6598456"
+            android:textColor="@color/common_coffee"
+            android:textSize="16dip" />
+        <ImageView
+            android:id="@+id/if_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/checked"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

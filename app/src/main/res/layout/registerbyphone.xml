@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/register_div1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginTop="85dip"
+        android:background="@color/common_div2" />
+
+    <RelativeLayout
+        android:id="@+id/register_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_below="@+id/register_div1"
+        android:background="@color/common_white" >
+
+        <ImageView
+            android:id="@+id/idimg"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:src="@drawable/phone" />
+
+        <EditText
+            android:id="@+id/userid_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/register_div2"
+            android:layout_marginLeft="60dip"
+            android:layout_marginRight="32dip"
+            android:background="@color/common_transparent"
+            android:numeric="integer"
+            android:hint="填写中国大陆手机号码"
+            android:singleLine="true"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/delbtn1"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_above="@+id/register_div2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="17.5dip"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/cross"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/del1"
+            android:layout_width="32dip"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/register_div2"
+            android:layout_alignParentRight="true"
+            android:background="@color/common_transparent" />
+
+        <Button
+            android:id="@+id/register_div2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/common_div2" />
+
+        <ImageView
+            android:id="@+id/pwdimg"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/pwdimg1" />
+
+        <EditText
+            android:id="@+id/pwd_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/register_div2"
+            android:layout_marginLeft="60dip"
+            android:layout_marginRight="32dip"
+            android:background="@color/common_transparent"
+            android:hint="6-14位，建议数字，字母等组合"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/delbtn2"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/register_div2"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="17.5dip"
+            android:src="@drawable/cross"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/del2"
+            android:layout_width="32dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/register_div2"
+            android:background="@color/common_transparent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/register_rel2"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:text="确认注册"
+        android:textColor="@color/common_white"
+        android:textSize="16dip" />
+
+    <Button
+        android:id="@+id/register_btn2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/register_rel1"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/pop_btn" />
+
+    <Button
+        android:id="@+id/register_div3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/register_rel1"
+        android:layout_marginLeft="15dip"
+        android:background="@color/common_div2" />
+
+    <RelativeLayout
+        android:id="@+id/register_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/register_div3"
+        android:background="@color/common_white" >
+
+        <ImageView
+            android:id="@+id/confirmimg"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/pwdimg1" />
+
+        <EditText
+            android:id="@+id/confirm_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dip"
+            android:layout_marginRight="132dip"
+            android:background="@color/common_transparent"
+            android:hint="输入手机验证码"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="15dip" />
+                    <Button
+                android:id="@+id/authoronly_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/trans_btn2"
+                android:text="获取验证码"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textColor="@color/common_black" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_div4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/register_rel2"
+        android:background="@color/common_div2" />
+
+</RelativeLayout>

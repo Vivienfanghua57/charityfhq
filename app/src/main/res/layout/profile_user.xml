@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fragment_bg"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/pro_bg"
+        android:layout_width="match_parent"
+        android:layout_height="500dip"
+        android:layout_marginTop="-100dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/pro_bg" />
+    <View
+        android:id="@+id/line"
+        android:layout_width="2dip"
+        android:layout_height="180dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dip"
+        android:background="@color/common_transparent" />
+
+    <com.util.MyScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/pro_firstrel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+
+
+                <com.util.RoundImageView
+                    android:id="@+id/cir_proavatar"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dip"
+                    android:src="@drawable/m"
+                    imagecontrol:border_outside_color="@color/light_transparent"
+                    imagecontrol:border_thickness="3dip" >
+                </com.util.RoundImageView>
+
+                <TextView
+                    android:id="@+id/prousername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cir_proavatar"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="张孟孟"
+                    android:textColor="@color/common_white"
+                    android:textSize="16dip" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4dip"
+                    android:layout_below="@+id/prousername"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="10dip"
+                    android:alpha="0.5"
+                    android:max="100"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/progressbar"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/titletxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBar"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="5dip"
+                    android:text="慈善局禅师"
+                    android:textColor="@color/common_white"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/leveltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBar"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@+id/titletxt"
+                    android:text="LV5"
+                    android:textColor="@color/common_white"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/protxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/progressBar"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="5dip"
+                    android:text="1600/2000"
+                    android:textColor="@color/common_white"
+                    android:textSize="15dip" />
+                <Button android:layout_width="fill_parent"
+                    android:layout_height="5dip"
+                    android:layout_below="@+id/protxt"
+                    android:background="@color/common_transparent"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/secondrel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pro_firstrel"
+                android:background="@color/common_white" >
+
+                <Button
+                    android:id="@+id/pro_div1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:background="@color/common_div" />
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pro_div1"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        android:id="@+id/postNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textColor="@color/common_black" />
+
+                    <TextView
+                        android:id="@+id/collectNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/common_black" />
+
+                    <TextView
+                        android:id="@+id/friendNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="16"
+                        android:textColor="@color/common_black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin1"
+                    android:layout_marginTop="5dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="帖子"
+                        android:textColor="@color/tabtxt_selected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="收藏"
+                        android:textColor="@color/tabtxt_selected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="关注"
+                        android:textColor="@color/tabtxt_selected" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/pro_div2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_below="@+id/lin2"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/common_div" />
+
+                <TextView
+                    android:id="@+id/pro_qianming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pro_div2"
+                    android:layout_marginLeft="90dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center"
+                    android:paddingRight="20dip"
+                    android:text="你所按时水水水水谁谁谁水水水水"
+                    android:textColor="@color/common_black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div2"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="个性签名"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+
+                <Button
+                    android:id="@+id/pro_div3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pro_qianming"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/common_div" />
+
+                <TextView
+                    android:id="@+id/pro_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pro_div3"
+                    android:layout_marginLeft="90dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center"
+                    android:paddingRight="20dip"
+                    android:text="example@gmail.com"
+                    android:textColor="@color/common_black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div3"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="    邮箱"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+
+                <Button
+                    android:id="@+id/pro_div4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pro_email"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/common_div" />
+
+                <TextView
+                    android:id="@+id/pro_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pro_div4"
+                    android:layout_marginLeft="90dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center"
+                    android:paddingRight="20dip"
+                    android:text="湖北   武汉"
+                    android:textColor="@color/common_black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div4"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="    地区"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+
+                <Button
+                    android:id="@+id/pro_div5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pro_loc"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:background="@color/common_div" />
+
+                <TextView
+                    android:id="@+id/pro_gen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pro_div5"
+                    android:layout_marginLeft="90dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center"
+                    android:paddingRight="20dip"
+                    android:text="♀"
+                    android:textColor="@color/common_black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:id="@+id/pro_sexx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/pro_div5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="20dip"
+                    android:text="    性别"
+                    android:textColor="@color/common_blackgray"
+                    android:textSize="15dip" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.util.MyScrollView>
+
+    <RelativeLayout
+        android:id="@+id/pro_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_transparent"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pro_back"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/left" />
+
+        <Button
+            android:id="@+id/pro_edit"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:visibility="gone"
+            android:background="@drawable/edit1" />
+    </RelativeLayout>
+ <RelativeLayout
+        android:id="@+id/pro_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentBottom="true" >
+        <Button
+            android:id="@+id/pro_div6"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_div2" />
+        <Button
+            android:id="@+id/pro_div7"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/common_div" />
+
+        <TextView
+            android:id="@+id/pro_focus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/pro_div6"
+            android:layout_toLeftOf="@+id/pro_div7"
+            android:background="@drawable/list_item_bg"
+            android:gravity="center"
+            android:text="关  注"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/focus_img"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/collect1" />
+
+        <TextView
+            android:id="@+id/pro_chat"
+            android:layout_below="@+id/pro_div6"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/pro_div7"
+            android:background="@drawable/list_item_bg"
+            android:gravity="center"
+            android:text="私  信"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/pro_div7"
+            android:src="@drawable/reply1" />
+    </RelativeLayout>
+</RelativeLayout>

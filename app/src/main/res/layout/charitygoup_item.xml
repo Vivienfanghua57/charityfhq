@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/ci_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip" >
+
+        <com.util.RoundImageView
+            android:id="@+id/group_avatar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/g" >
+            </com.util.RoundImageView>
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/group_avatar"
+            android:layout_alignTop="@+id/group_avatar"
+            android:singleLine="true"
+            android:text="武汉大学慈善点"
+            android:textColor="@color/common_black"
+            android:textSize="16dip" />
+       <ImageView
+           android:id="@+id/membercount_img"
+           android:layout_width="15dip"
+           android:layout_height="15dip"
+           android:layout_marginLeft="20dip"
+           android:layout_toRightOf="@+id/group_avatar"
+           android:layout_alignBottom="@+id/group_avatar"
+           android:src="@drawable/idimg1"/>
+       <TextView
+           android:id="@+id/membercount"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dip"
+           android:layout_toRightOf="@+id/membercount_img"
+           android:layout_alignTop="@+id/membercount_img"
+           android:layout_alignBottom="@+id/membercount_img"
+           android:singleLine="true"
+           android:gravity="center|bottom"
+           android:text="10/30"
+           android:textColor="@color/common_coffee" />
+       <ImageView
+           android:id="@+id/location_img"
+           android:layout_width="15dip"
+           android:layout_height="15dip"
+           android:layout_marginLeft="15dip"
+           android:layout_toRightOf="@+id/membercount"
+           android:layout_alignBottom="@+id/group_avatar"
+           android:src="@drawable/position"/>
+       <TextView
+           android:id="@+id/location"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dip"
+           android:layout_toRightOf="@+id/location_img"
+           android:layout_alignTop="@+id/location_img"
+           android:layout_alignBottom="@+id/location_img"
+           android:singleLine="true"
+           android:gravity="center|bottom"
+           android:text="1000米内"
+           android:textColor="@color/common_coffee" />
+    </RelativeLayout>
+
+</RelativeLayout>

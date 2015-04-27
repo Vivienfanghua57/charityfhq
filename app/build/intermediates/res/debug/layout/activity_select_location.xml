@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffffff"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/newloc_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_main"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="位置"
+            android:textColor="@color/common_white"
+            android:textSize="20dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/loccancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/common_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_rel"
+        android:layout_below="@+id/newloc_rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal"
+        android:background="#ffffffff">
+
+        <EditText
+            android:id="@+id/location_search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="38dip"
+            android:background="@drawable/edittext"
+            android:hint="搜索所在地" />
+
+        <ImageView
+            android:id="@+id/locationSearch"
+            android:layout_width="19dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical"
+            android:src="@drawable/magnifying_glass"/>
+        <ImageView
+            android:id="@+id/location_search_delete"
+            android:layout_width="19dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dip"
+            android:gravity="center_vertical"
+            android:src="@drawable/cross" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/locationlist"
+        android:layout_below="@+id/search_rel"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="3dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff4f7f9"
+        android:cacheColorHint="#00000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1.0px"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>
+<!-- From: file:/E:/CharityDemo/app/src/main/res/layout/activity_select_location.xml -->

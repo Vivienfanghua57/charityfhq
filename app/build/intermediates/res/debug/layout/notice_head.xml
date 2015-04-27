@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nh_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <View
+        android:id="@+id/nh_div"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_div" />
+    <RelativeLayout
+        android:id="@+id/nh_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_below="@id/nh_div"
+        android:clickable="true" 
+        android:background="@drawable/list_item_bg">
+
+        <ImageView
+            android:id="@+id/newfocus"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/notice_test1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/newfocus"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="最新关注"
+            android:textColor="@color/common_black"
+            android:textSize="20dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/nh_div1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/nh_rel1"
+        android:background="@color/common_div" />
+
+    <RelativeLayout
+        android:id="@+id/nh_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_below="@+id/nh_div1"
+        android:background="@drawable/list_item_bg" >
+
+        <ImageView
+            android:id="@+id/charitygroup"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/notice_test2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/charitygroup"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="慈善组"
+            android:textColor="@color/common_black"
+            android:textSize="20dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/nh_div2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/nh_rel2"
+        android:background="@color/common_div" />
+
+    <RelativeLayout
+        android:id="@+id/nh_rel3"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_below="@+id/nh_div2"
+        android:background="@drawable/list_item_bg" >
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/notice_test1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/comment"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@color/common_black"
+            android:textSize="20dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/nh_div3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/nh_rel3"
+        android:background="@color/common_div" />
+
+    <RelativeLayout
+        android:id="@+id/nh_rel4"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_below="@+id/nh_div3"
+        android:background="@drawable/list_item_bg" >
+
+        <ImageView
+            android:id="@+id/charity_action"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/notice_test2" />
+
+        <TextView
+            android:id="@+id/message_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/charity_action"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="抢和捐"
+            android:textColor="@color/common_black"
+            android:textSize="20dip" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/notice_head.xml -->

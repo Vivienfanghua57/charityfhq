@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tc_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fragment_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tc_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_main"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的收藏"
+            android:textColor="@color/common_white"
+            android:textSize="20dip" >
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tc_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tc_rel1"
+        android:background="@drawable/mebtn1" >
+
+        <ImageView
+            android:id="@+id/tc_img1"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/collect2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@+id/tc_img1"
+            android:gravity="center"
+            android:text="我的收藏"
+            android:textColor="@color/common_black"
+            android:textSize="16dip" />
+
+        <ImageView
+            android:id="@+id/tc_img2"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/down" />
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:layout_toLeftOf="@+id/tc_img2"
+            android:gravity="center"
+            android:text="种类排序"
+            android:textSize="14dip" />
+                        <Button
+            android:id="@+id/tm_div1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:layout_below="@+id/tc_img1"
+            android:background="@color/common_div" />
+
+        <ListView
+            android:id="@+id/collect_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_below="@+id/tm_div1"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/common_div"
+            android:dividerHeight="1dip"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/collect.xml -->

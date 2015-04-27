@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ng_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ng_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_main"
+        android:clickable="true"
+        android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="慈善组"
+            android:textColor="@color/common_white"
+            android:textSize="20dip" >
+        </TextView>
+
+                    <Button
+                android:id="@+id/more"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/more" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/notice_group_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ng_rel1"
+        android:background="@color/common_white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/common_div"
+        android:dividerHeight="0.1dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+
+</RelativeLayout>

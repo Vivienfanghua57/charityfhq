@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.charitydemo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pi_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pi_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="77dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/reply_author1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="方华强："
+            android:textColor="@color/common_main"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/reply_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/reply_author1"
+            android:gravity="center|left"
+            android:text="好啊好啊好啊！迫不及待呢"
+            android:textColor="@color/common_black"
+            android:textSize="16dip" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

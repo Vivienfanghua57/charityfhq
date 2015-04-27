@@ -1,0 +1,338 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/settings_rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_main"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/common_white"
+            android:textSize="20dip" >
+        </TextView>
+
+        <Button
+            android:id="@+id/settings_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_rel1"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/list_item_bg" >
+        <Button
+            android:id="@+id/settings_div"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_streamlightgray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="账号管理"
+            android:textColor="@color/common_black" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/right" />
+        <Button
+            android:id="@+id/settings_div0"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_streamlightgray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_rel3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_rel2"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/list_item_bg" >
+        <Button
+            android:id="@+id/settings_div1_0"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_streamlightgray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="提醒和通知"
+            android:textColor="@color/common_black" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/settings_div1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/settings_rel3"
+        android:background="@color/common_lightgray" />
+
+    <RelativeLayout
+        android:id="@+id/settings_rel4"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_div1"
+        android:background="@drawable/list_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="通用设置"
+            android:textColor="@color/common_black" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/settings_div2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/settings_rel4"
+        android:background="@color/common_lightgray" />
+
+    <RelativeLayout
+        android:id="@+id/settings_rel5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_div2"
+        android:background="@drawable/list_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="隐私与安全"
+            android:textColor="@color/common_black" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/right" />
+        <Button
+            android:id="@+id/settings_div1_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_streamlightgray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_rel6"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_rel5"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/list_item_bg" >
+        <Button
+            android:id="@+id/settings_div2_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_streamlightgray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="意见反馈"
+            android:textColor="@color/common_black" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/settings_div3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/settings_rel6"
+        android:background="@color/common_lightgray" />
+
+    <RelativeLayout
+        android:id="@+id/settings_rel7"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_div3"
+        android:background="@drawable/list_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="关于微善"
+            android:textColor="@color/common_black" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/right" />
+        <Button
+            android:id="@+id/settings_div2_2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_streamlightgray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_rel8"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_rel7"
+        android:layout_marginTop="20dip"
+        android:background="@color/common_white" >
+        <Button
+            android:id="@+id/settings_div3_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_streamlightgray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="夜间模式"
+            android:textColor="@color/common_black" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@android:color/transparent"
+            android:button="@drawable/ios7_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/settings_div4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"
+        android:layout_below="@+id/settings_rel8"
+        android:background="@color/common_lightgray" />
+
+    <RelativeLayout
+        android:id="@+id/settings_rel9"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_div4"
+        android:background="@drawable/list_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="清除缓存"
+            android:textColor="@color/common_black" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/right" />
+        <Button
+            android:id="@+id/settings_div3_2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_streamlightgray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_rel10"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/settings_rel9"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/list_item_bg" >
+        <Button
+            android:id="@+id/settings_div4_0"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentTop="true"
+            android:background="@color/common_streamlightgray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:text="退出微善"
+            android:textColor="@color/common_red" />
+        <Button
+            android:id="@+id/settings_div4_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_streamlightgray" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+E:\CharityDemo\app\build\intermediates\classes\debug
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-d65d2172fb72aec579d4d66dc68acdeef000db45.jar
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\classes-c607fe0979756cdc2ebda093f4ce9339947c4fbc.jar
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-0b3807980ad36a867fd563cd80183a2e0ed8af7c.jar
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\Android_Location_V1.3.2-68cbf67382e7ebbe6e2df52b69592b009b310046.jar
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-a3a2bd9f0205ced77c0d200066ab4d3007b5ccfd.jar
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\AMap_Services_V2.4.0-62b1b3173b8b9a45d42d8e6e67ff26e480ce1768.jar
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\Android_2DMapApi_V2.4.1-b535aac57ec656097a00db8130ad3231f7639a2d.jar
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\classes-76fc8f2fc636cf89c35a0590226b9ebeaf1e80ac.jar
+E:\CharityDemo\app\build\intermediates\pre-dexed\debug\asmack-bc926627bdad589f5b6bde4208bd08071b54b278.jar

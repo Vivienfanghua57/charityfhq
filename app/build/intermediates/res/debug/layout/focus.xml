@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_white" >
+
+    <RelativeLayout
+        android:id="@+id/tc_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/common_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tc_rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:background="@color/common_main"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="联系人"
+                android:textColor="@color/common_white"
+                android:textSize="20dip" >
+            </TextView>
+
+            <Button
+                android:id="@+id/tc_search"
+                android:layout_width="20dip"
+                android:layout_height="18dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:layout_toLeftOf="@+id/tc_add"
+                android:background="@drawable/search_btn" />
+
+            <Button
+                android:id="@+id/tc_add"
+                android:layout_width="20dip"
+                android:layout_height="18dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/add_btn" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/contact_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tc_rel1"
+            android:background="@color/common_white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/common_div"
+            android:dividerHeight="1dip"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+
+        <com.indexlist.LetterView
+            android:id="@+id/letterView"
+            android:layout_width="35dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tc_rel1"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="50dip" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/CharityDemo/app/src/main/res/layout/focus.xml -->

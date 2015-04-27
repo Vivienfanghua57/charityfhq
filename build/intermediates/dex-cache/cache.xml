@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\CharityDemo\app\libs\pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-a3a2bd9f0205ced77c0d200066ab4d3007b5ccfd.jar" />
+    </item>
+    <item
+        jar="E:\CharityDemo\app\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="307c1cc532eabbf1d135b43e5c983c9da700449d">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\android-support-v4-a7ed5ad50f05f3d4cda8ea4fd4d99a0917a313e8.jar" />
+    </item>
+    <item
+        jar="E:\CharityDemo\app\libs\asmack.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="41786d823e61e19321bf39b9efe58e91d6df3bf7">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\asmack-bc926627bdad589f5b6bde4208bd08071b54b278.jar" />
+    </item>
+    <item
+        jar="E:\CharityDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-0b3807980ad36a867fd563cd80183a2e0ed8af7c.jar" />
+    </item>
+    <item
+        jar="E:\CharityDemo\app\libs\AMap_Services_V2.4.0.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="3057067b0d15469c99c2e8b1a87d66c94862ac7a">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\AMap_Services_V2.4.0-62b1b3173b8b9a45d42d8e6e67ff26e480ce1768.jar" />
+    </item>
+    <item
+        jar="E:\CharityDemo\app\libs\Android_Location_V1.3.2.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="b64d1f38ef7ee28b538d61a39d040f249c65587c">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\Android_Location_V1.3.2-68cbf67382e7ebbe6e2df52b69592b009b310046.jar" />
+    </item>
+    <item
+        jar="E:\CharityDemo\app\build\intermediates\exploded-aar\CharityDemo\library\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="60a62e0c89b0d6e36bd9e8415f7eb4b35efd8a5b">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\classes-c607fe0979756cdc2ebda093f4ce9339947c4fbc.jar" />
+    </item>
+    <item
+        jar="E:\CharityDemo\app\libs\Android_2DMapApi_V2.4.1.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="adca12b4530f28ebf2c0d333cb35b67191400c49">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\Android_2DMapApi_V2.4.1-b535aac57ec656097a00db8130ad3231f7639a2d.jar" />
+    </item>
+    <item
+        jar="E:\CharityDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\classes-76fc8f2fc636cf89c35a0590226b9ebeaf1e80ac.jar" />
+    </item>
+    <item
+        jar="E:\Download\adt-bundle-windows-x86_64-20140321\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="E:\CharityDemo\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-d65d2172fb72aec579d4d66dc68acdeef000db45.jar" />
+    </item>
+
+</items>
